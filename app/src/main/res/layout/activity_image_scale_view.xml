@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.imageview.ImageViewScaleActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_image_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/fl_image_4"
+        app:layout_constraintEnd_toStartOf="@id/fl_image_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="fitCenter"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_image_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/fl_image_1"
+        app:layout_constraintEnd_toStartOf="@id/fl_image_3"
+        app:layout_constraintStart_toEndOf="@id/fl_image_1"
+        app:layout_constraintTop_toTopOf="@id/fl_image_1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="fitXY"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+
+        android:id="@+id/fl_image_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/fl_image_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fl_image_2"
+        app:layout_constraintTop_toTopOf="@id/fl_image_2">
+
+        <ImageView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:scaleType="fitStart"
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="fitStart"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_image_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/fl_image_7"
+        app:layout_constraintEnd_toEndOf="@id/fl_image_1"
+        app:layout_constraintStart_toStartOf="@id/fl_image_1"
+        app:layout_constraintTop_toBottomOf="@id/fl_image_1">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:scaleType="fitEnd"
+
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="fitEnd"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_image_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/fl_image_4"
+        app:layout_constraintEnd_toStartOf="@id/fl_image_6"
+        app:layout_constraintStart_toStartOf="@+id/fl_image_2"
+        app:layout_constraintTop_toTopOf="@id/fl_image_4">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:scaleType="matrix"
+
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="matrix"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_image_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/fl_image_5"
+        app:layout_constraintEnd_toEndOf="@id/fl_image_3"
+        app:layout_constraintStart_toEndOf="@id/fl_image_5"
+        app:layout_constraintTop_toTopOf="@id/fl_image_5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:scaleType="center"
+
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="center"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_image_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fl_image_4"
+        app:layout_constraintStart_toStartOf="@id/fl_image_4"
+        app:layout_constraintTop_toBottomOf="@id/fl_image_4">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="centerCrop"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_image_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/fl_image_7"
+        app:layout_constraintEnd_toEndOf="@+id/fl_image_5"
+        app:layout_constraintStart_toStartOf="@+id/fl_image_5"
+        app:layout_constraintTop_toTopOf="@id/fl_image_7">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:scaleType="centerInside"
+
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="centerInside"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_image_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/fl_image_8"
+        app:layout_constraintEnd_toEndOf="@+id/fl_image_6"
+        app:layout_constraintStart_toStartOf="@+id/fl_image_6"
+        app:layout_constraintTop_toTopOf="@id/fl_image_7">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_200"
+            android:src="@drawable/profile_picture" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="normal"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

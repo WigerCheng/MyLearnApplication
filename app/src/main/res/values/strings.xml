@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string-array name="image_scale_array">
+        <item>CENTER</item>
+        <item>CENTER_CROP</item>
+        <item>CENTER_INSIDE</item>
+        <item>FIT_CENTER</item>
+        <item>FIT_END</item>
+        <item>FIT_START</item>
+        <item>FIT_XY</item>
+        <item>MATRIX</item>
+    </string-array>
+
+    <string-array name="image_scale_size">
+        <item>正方形图片，宽高100</item>
+        <item>正方形图片，宽高很长</item>
+        <item>长方形图片，宽100，高很长</item>
+        <item>长方形图片，高100，宽很长</item>
+        <item>长方形图片，高100，宽200</item>
+        <item>长方形图片，高200，宽100</item>
+    </string-array>
+</resources>
