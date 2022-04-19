@@ -8,6 +8,12 @@
     tools:context=".animation.AnimationListActivity">
 
     <Button
+        android:id="@+id/btn_basic_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4大基础动画" />
+
+    <Button
         android:id="@+id/btn_prop_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

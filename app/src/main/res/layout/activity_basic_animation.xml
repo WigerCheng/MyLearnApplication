@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".animation.BasicAnimationActivity">
+
+    <View
+        android:id="@+id/v_basic_animation"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@color/purple_200" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_basic_animation_alpha"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_gravity="center_vertical"
+                android:text="透明度动画" />
+
+            <Button
+                android:id="@+id/btn_basic_animation_rotate"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_gravity="center_vertical"
+                android:text="旋转动画" />
+
+            <Button
+                android:id="@+id/btn_basic_animation_rotate_self"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:text="旋转动画(以自身旋转)" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_basic_animation_translate"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_gravity="center_vertical"
+                android:text="位移动画" />
+
+            <Button
+                android:id="@+id/btn_basic_animation_scale"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_gravity="center_vertical"
+                android:text="缩放动画" />
+
+            <Button
+                android:id="@+id/btn_basic_animation_scale_self"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_gravity="center_vertical"
+                android:layout_span="2"
+                android:text="缩放动画（以自身为中心）" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_basic_animation_animation_set"
+                android:layout_span="4"
+                android:text="动画集合" />
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

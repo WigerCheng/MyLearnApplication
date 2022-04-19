@@ -10,6 +10,11 @@ class AnimationListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_animation_list)
+        findViewById<Button>(R.id.btn_basic_animation).setOnClickListener {
+            Intent(this, BasicAnimationActivity::class.java).also {
+                startActivity(it)
+            }
+        }
 
         findViewById<Button>(R.id.btn_frame_animation).setOnClickListener {
             Intent(this, FrameAnimationActivity::class.java).also {
