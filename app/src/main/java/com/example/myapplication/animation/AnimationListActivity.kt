@@ -15,7 +15,6 @@ class AnimationListActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
         findViewById<Button>(R.id.btn_frame_animation).setOnClickListener {
             Intent(this, FrameAnimationActivity::class.java).also {
                 startActivity(it)
@@ -28,6 +27,11 @@ class AnimationListActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.btn_prop_animation).setOnClickListener {
             Intent(this, PropAnimationActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+        findViewById<Button>(R.id.btn_circle_animation).setOnClickListener {
+            Intent(this, CircleAnimationActivity::class.java).also {
                 startActivity(it)
             }
         }

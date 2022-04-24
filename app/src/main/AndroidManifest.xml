@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".animation.CircleAnimationActivity"
+            android:exported="false" />
+        <activity
             android:name=".animation.BasicAnimationActivity"
             android:exported="false" />
         <activity
